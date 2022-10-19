@@ -43,14 +43,17 @@ public class BcaDocument extends DocumentBase {
         }
         Log.i("PR", "parse" );
 
+        Log.e("Document", String.valueOf(document.getChildNodes()));
         NodeList root = document.getChildNodes();
         Node param = root.item(0);
+        Log.e("TAG", "root: "+root.item(0) );
         NodeList node = param.getChildNodes();
         int index;
         String text;
         for (int i = 1; i < node.getLength(); i = index) {
             index = i;
 
+            Log.e("TAG", "node: "+node.item(i+1).getTextContent() );
             //NAME
             text = node.item(index).getTextContent();
             if (text == null || text.isEmpty()) {
@@ -59,7 +62,7 @@ public class BcaDocument extends DocumentBase {
             index += 2;
             sessionManager.setMerchantName(text);
             Log.i("PR","MERCHANT NAME " + sessionManager.getMerchantName());
-
+            Log.e("TAG", "parse: "+index );
 
             //ADDRESS
             text = node.item(index).getTextContent();

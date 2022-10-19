@@ -48,6 +48,8 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <!-- struck settle -->
     <LinearLayout
         android:id="@+id/buktiTransaksi"
         android:visibility="invisible"

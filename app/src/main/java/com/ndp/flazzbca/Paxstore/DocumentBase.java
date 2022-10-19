@@ -33,7 +33,7 @@ public abstract class DocumentBase {
 
     public DocumentBase(String filePath) {
         this.filePath = DownloadManager.getInstance().getFilePath() + File.separator + filePath;
-        Log.i("FilePath", filePath);
+        Log.i("FilePath", this.filePath);
     }
 
     protected Document getDocument() {

@@ -235,8 +235,8 @@ public class Settelment extends AppCompatActivity implements View.OnClickListene
     //menampilkan data transaksi S40
     void storeDataToArray(){
 
-        Cursor cursor = db.readAllTransaksi();
-        Cursor reg = db.readAllRegistry();
+        Cursor cursor   = db.readAllTransaksi();
+        Cursor reg      = db.readAllRegistry();
         reg.moveToFirst();
         if(cursor.getCount() == 0){
             alert_layout.setVisibility(View.VISIBLE);

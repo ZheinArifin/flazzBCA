@@ -29,8 +29,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private Context context;
     private ArrayList id, referensi, tgl, amount, pan, data, batch;
-//    private RequestQueue requestQueue;
-//    private StringRequest stringRequest;
     TextView Title, close, ref, Tgl, ttl, Hour, Status, btch;
     Button next;
 

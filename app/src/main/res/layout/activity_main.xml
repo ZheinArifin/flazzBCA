@@ -140,6 +140,7 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/custom_background"
                     android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -175,10 +176,10 @@
                                 android:id="@+id/seeAll"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textStyle="bold"
                                 android:text="See All"
                                 android:textColor="@color/black"
-                                android:textSize="17dp" />
+                                android:textSize="17dp"
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 
@@ -188,6 +189,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <LinearLayout
                             android:id="@+id/LayLast"
                             android:layout_width="match_parent"
@@ -195,31 +197,33 @@
                             android:orientation="vertical">
 
                             <androidx.cardview.widget.CardView
-                                android:layout_marginLeft="25dp"
-                                android:layout_marginRight="25dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                app:cardElevation="3dp"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@color/white"
+                                app:cardElevation="3dp">
+
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:padding="5dp"
-                                    android:orientation="horizontal">
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
 
                                     <LinearLayout
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
-                                        android:gravity="center"
-                                        android:layout_weight="0.8">
+                                        android:layout_weight="0.8"
+                                        android:gravity="center">
 
                                         <ImageView
-                                            android:gravity="center"
-                                            android:textColor="@color/purple_700"
                                             android:layout_width="24dp"
                                             android:layout_height="24dp"
-                                            android:src="@drawable/success"/>
+                                            android:gravity="center"
+                                            android:src="@drawable/success"
+                                            android:textColor="@color/purple_700" />
 
                                     </LinearLayout>
 
@@ -228,29 +232,33 @@
                                         android:layout_height="match_parent"
                                         android:layout_weight="4"
                                         android:orientation="vertical">
+
                                         <LinearLayout
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
                                             android:layout_weight="1">
+
                                             <TextView
                                                 android:id="@+id/txtRefM"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="25dp"
+                                                android:gravity="left|center"
                                                 android:text="123-456-789-009"
                                                 android:textColor="@color/purple_700"
-                                                android:textStyle="bold"
-                                                android:gravity="left|center"
-                                                android:layout_width="match_parent"
-                                                android:layout_height="25dp"/>
+                                                android:textStyle="bold" />
                                         </LinearLayout>
+
                                         <LinearLayout
-                                            android:orientation="horizontal"
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
-                                            android:layout_weight="1">
+                                            android:layout_weight="1"
+                                            android:orientation="horizontal">
+
                                             <TextView
                                                 android:id="@+id/txtTglM"
-                                                android:text="10/10/19"
                                                 android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"/>
+                                                android:layout_height="wrap_content"
+                                                android:text="10/10/19" />
 
                                         </LinearLayout>
 
@@ -259,8 +267,8 @@
                                     <LinearLayout
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_weight="3">
+                                        android:layout_weight="3"
+                                        android:orientation="vertical">
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
@@ -269,11 +277,11 @@
 
                                             <TextView
                                                 android:id="@+id/txt_amountM"
-                                                android:gravity="right"
-                                                android:textStyle="bold"
-                                                android:text="Rp. 230.000"
                                                 android:layout_width="match_parent"
-                                                android:layout_height="match_parent"/>
+                                                android:layout_height="match_parent"
+                                                android:gravity="right"
+                                                android:text="Rp. 230.000"
+                                                android:textStyle="bold" />
 
                                         </LinearLayout>
 
@@ -281,37 +289,41 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="0dp"
                                             android:layout_weight="1">
+
                                             <TextView
                                                 android:id="@+id/txtstatusM"
-                                                android:gravity="right"
-                                                android:text="Success"
                                                 android:layout_width="match_parent"
-                                                android:layout_height="match_parent"/>
+                                                android:layout_height="match_parent"
+                                                android:gravity="right"
+                                                android:text="Success" />
                                         </LinearLayout>
                                     </LinearLayout>
 
                                 </LinearLayout>
                             </androidx.cardview.widget.CardView>
                         </LinearLayout>
+
                         <LinearLayout
                             android:id="@+id/layNoTrans"
-                            android:visibility="gone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
                             <androidx.cardview.widget.CardView
-                                android:layout_marginLeft="25dp"
-                                android:layout_marginRight="25dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
-                                app:cardElevation="3dp"
                                 android:layout_width="match_parent"
-                                android:layout_height="50dp">
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_marginBottom="10dp"
+                                app:cardElevation="3dp">
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Tidak Ada Transaksi"
-                                    android:layout_gravity="center"/>
+                                    android:layout_gravity="center"
+                                    android:text="Tidak Ada Transaksi" />
                             </androidx.cardview.widget.CardView>
 
                         </LinearLayout>
